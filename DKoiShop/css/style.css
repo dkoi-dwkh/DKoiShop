@@ -1,0 +1,133 @@
+/* CSS tùy chỉnh cho website DkoiShop */
+body {
+  font-family: Arial, sans-serif;
+}
+html {
+  scroll-behavior: smooth;
+}
+
+
+.navbar-brand {
+  letter-spacing: 1px;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  padding-top: 100px; /* bằng chiều cao navbar của bạn */
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 6px 18px rgba(0, 0, 0, 0.2);
+}
+
+
+.card:hover {
+  transform: translateY(-5px);
+  transition: 0.3s;
+  box-shadow: 0 8px 20px rgba(0, 0, 0, 0.15);
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.img {
+  max-width: 100%;
+  height: auto;
+}
+section, div[id] {
+  scroll-margin-top: 100px; /* bằng hoặc lớn hơn chiều cao navbar */
+}
+.logo {
+  height: auto;
+  max-height: 80px; /* PC */
+  width: auto;
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  .logo {
+    max-height: 60px;
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  .logo {
+    max-height: 50px;
+  }
+}
+
+
+/* Mobile mặc định */
+#mainCarousel img {
+  height: 175px;
+  object-fit: cover;
+  width: 100%;
+}
+
+/* Tablet */
+@media (min-width: 768px) {
+  #mainCarousel img {
+    height: 250px;
+  }
+}
+
+/* PC */
+@media (min-width: 992px) {
+  #mainCarousel img {
+    height: 330px;
+  }
+}
+
+
+.card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+.card:hover {
+  transform: translateY(-8px);
+  box-shadow: 0 10px 25px rgba(220, 53, 69, 0.3);
+}
+
+  
+.img-container {
+  width: 100%;
+  height: 200px;       /* cố định chiều cao */
+  overflow: hidden;    /* cắt phần dư ảnh */
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.product-img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;   /* tự crop vừa khung, không méo */
+}
+
+
+.bg-light {
+  background: linear-gradient(to right, #fff, #ffeaea); /* nền sáng nhẹ */
+}
+html, body {
+  height: auto;       /* cho phép cao hơn màn hình */
+  min-height: 100%;   /* không bị ngắn hơn màn hình */
+  overflow-x: hidden; /* chỉ chặn tràn ngang */
+  overflow-y: auto;   /* cho phép cuộn dọc */
+}
+
+main {
+  min-height: calc(100vh - 200px); /* chừa chỗ cho header + footer */
+}
+
+footer {
+  position: relative; /* không dùng absolute/fixed */
+  width: 100%;
+}
+
+

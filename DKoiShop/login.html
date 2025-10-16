@@ -1,0 +1,230 @@
+<!DOCTYPE html>
+<html lang="vi">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>Đăng nhập - DkoiShop</title>
+    <link rel="stylesheet" href="css/style.css">
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+    />
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap-icons/font/bootstrap-icons.css"
+      rel="stylesheet"
+    />
+    <style>
+      div {
+   scroll-margin-top: 100px; /* bằng hoặc lớn hơn chiều cao navbar */
+}
+     
+
+      .card {
+        animation: fadeInDown 0.6s ease;
+      }
+      @keyframes fadeInDown {
+        from {
+          opacity: 0;
+          transform: translateY(-30px);
+        }
+        to {
+          opacity: 1;
+          transform: translateY(0);
+        }
+      }
+      body {
+  padding-top: 90px; /* chiều cao navbar desktop */
+}
+
+/* Tablet */
+@media (max-width: 991.98px) {
+  body {
+    padding-top: 120px; /* navbar khi thu nhỏ cao hơn */
+  }
+}
+
+/* Mobile */
+@media (max-width: 767.98px) {
+  body {
+    padding-top: 140px; /* menu mobile cao hơn nữa */
+  }
+}
+
+
+
+
+
+      
+    </style>
+  </head>
+  <body class="bg-light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-danger fixed-top " data-bs-auto-close="false">
+      <div class="container-fluid">
+        <a
+          class="navbar-brand fw-bold d-flex align-items-center"
+          href="index.html"
+        >
+          <img
+            src="images/logo.png"
+            alt="DKoiShop Logo"
+            
+            class="logo"
+          />
+        </a>
+
+        <button
+          class="navbar-toggler"
+          type="button"
+          data-bs-toggle="collapse"
+          data-bs-target="#navbarMenu"
+        >
+          <span class="navbar-toggler-icon"></span>
+        </button>
+        <div class="collapse navbar-collapse" id="navbarMenu">
+          <ul class="navbar-nav ms-auto">
+            <li class="nav-item">
+              <a class="nav-link " href="index.html">Trang Chủ</a>
+            </li>
+
+            <li class="nav-item ">
+              <a
+                class="nav-link "
+                href="products.html"
+              >
+                Sản Phẩm
+              </a>
+            </li>
+
+            <li class="nav-item">
+              <a class="nav-link" href="about.html">Giới Thiệu</a>
+            </li>
+            <li class="nav-item"><a class="nav-link" href="contact.html">Liên Hệ</a></li>
+            <li class="nav-item ">
+              <a class="btn btn-outline-light ms-2 active" href="login.html">
+                <i class="bi bi-person-circle me-1"></i> Đăng nhập
+              </a>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </nav>
+    
+    <div
+    id="form"
+      class="container d-flex justify-content-center align-items-center min-vh-100"
+    >
+      <div class="card shadow-lg p-4" style="max-width: 400px; width: 100%">
+        <!-- Nút X -->
+        <a
+          href="index.html"
+          class="btn-close position-absolute top-0 end-0 m-3"
+          aria-label="Close"
+        ></a>
+        <h3 class="text-center mb-4">Đăng nhập</h3>
+        <form>
+          <div class="mb-3">
+            <label for="email" class="form-label">Email</label>
+            <input
+              type="email"
+              id="email"
+              class="form-control"
+              placeholder="Nhập email"
+              required
+            />
+          </div>
+          <div class="mb-3">
+            <label for="password" class="form-label">Mật khẩu</label>
+            <input
+              type="password"
+              id="password"
+              class="form-control"
+              placeholder="Nhập mật khẩu"
+              required
+            />
+          </div>
+          <button type="submit" class="btn btn-primary w-100">Đăng nhập</button>
+        </form>
+        <hr />
+        <p class="text-center mb-2">Chưa có tài khoản?</p>
+        <a href="register.html" class="btn btn-outline-secondary w-100"
+          >Đăng ký</a
+        >
+      </div>
+    </div>
+    <!-- Footer -->
+    <footer class="bg-dark text-light pt-5 pb-4">
+      <div class="container">
+        <div class="row">
+          <!-- Cột 1: Logo + giới thiệu -->
+          <div id="gioithieu" class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">
+              <i class="bi bi-shop me-2"></i>DkoiShop
+            </h5>
+            <p>
+              DkoiShop chuyên cung cấp chuột, bàn phím, củ sạc và các phụ kiện
+              công nghệ chính hãng, giá tốt nhất.
+            </p>
+          </div>
+
+          <!-- Cột 2: Liên kết nhanh -->
+          <div class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">Liên kết nhanh</h5>
+            <ul class="list-unstyled">
+              <li>
+                <a href="index.html" class="text-decoration-none text-light"
+                  >Trang chủ</a
+                >
+              </li>
+              <li>
+                <a href="products.html" class="text-decoration-none text-light"
+                  >Sản phẩm</a
+                >
+              </li>
+              <li>
+                <a href="about.html" class="text-decoration-none text-light"
+                  >Giới thiệu</a
+                >
+              </li>
+              <li>
+                <a href="contact.html" class="text-decoration-none text-light"
+                  >Liên hệ</a
+                >
+              </li>
+            </ul>
+          </div>
+
+          <!-- Cột 3: Thông tin liên hệ -->
+          <div id="lienhe" class="col-md-4 mb-4">
+            <h5 class="fw-bold mb-3">Liên hệ</h5>
+            <p>
+              <i class="bi bi-geo-alt-fill me-2"></i> 12 Trịnh Đình Thảo , Quận
+              Tân Phú, TP.HCM
+            </p>
+            <p><i class="bi bi-telephone-fill me-2"></i> 0909 123 456</p>
+            <p><i class="bi bi-envelope-fill me-2"></i> support@dkoishop.vn</p>
+
+            <!-- Icon mạng xã hội -->
+            <div>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-facebook fs-4"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-instagram fs-4"></i
+              ></a>
+              <a href="#" class="text-light me-3"
+                ><i class="bi bi-youtube fs-4"></i
+              ></a>
+            </div>
+          </div>
+        </div>
+
+        <!-- Dòng cuối -->
+        <div class="text-center mt-4">
+          <p class="mb-0">&copy; 2025 DKoiShop. All rights reserved.</p>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.2/dist/js/bootstrap.bundle.min.js"></script>
+  </body>
+</html>
